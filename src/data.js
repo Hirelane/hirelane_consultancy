@@ -23,4 +23,51 @@ const talents = [
     }
 ];
 
-export { talents };
+const expertises = [
+    {
+        title: "AI Developers",
+        icon: tech,
+        iconBg: "#f07663",
+        points: [
+            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
+            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
+            "Rigorously selecting and presenting the best AI candidates.",
+            "Participating in code reviews and providing constructive feedback  to other developers.",
+        ]
+    },
+    {
+        title: "Data Engineers",
+        icon: tech,
+        iconBg: "#f07663",
+        points: [
+            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
+            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
+            "Rigorously selecting and presenting the best AI candidates.",
+            "Participating in code reviews and providing constructive feedback  to other developers.",
+        ]
+    },
+    {
+        title: "Python Developers",
+        icon: tech,
+        iconBg: "#f07663",
+        points: [
+            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
+            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
+            "Rigorously selecting and presenting the best AI candidates.",
+            "Participating in code reviews and providing constructive feedback  to other developers.",
+        ]
+    },
+    {
+        title: "Cloud Engineers ",
+        icon: tech,
+        iconBg: "#f07663",
+        points: [
+            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
+            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
+            "Rigorously selecting and presenting the best AI candidates.",
+            "Participating in code reviews and providing constructive feedback  to other developers.",
+        ]
+    }
+]
+
+export { talents, expertises };
