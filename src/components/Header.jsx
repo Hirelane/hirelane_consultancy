@@ -7,9 +7,9 @@ const Header = () => (
     <div className='flex flex-row justify-between mt-[150px] bg co'>
         <div className='w-[40%] ml-24 flex flex-col mt-[100px]'>
             <h2 className='text-[2.5rem] font-light'>
-                Unlocking tomorrow
+                Where talent meets
             </h2>
-            <h1 className=' text-[6rem] font-bold text-[#F13F25]'>TODAY.</h1>
+            <h1 className=' text-[6rem] font-bold text-[#F13F25]'>TRIUMPH.</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores nam voluptate rem ratione minus omnis, ipsa porro eius architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, est.</p>
             <Button variant='contained' endIcon={<SendIcon />} className='w-[25%]' 
             sx={{
