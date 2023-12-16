@@ -1,6 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { expertises } from "../data";
-import "react-vertical-timeline-component/style.min.css" 
+import "react-vertical-timeline-component/style.min.css"
 
 const ExpertiseCard = ({expertise}) => {
     return (
@@ -38,11 +38,11 @@ const ExpertiseCard = ({expertise}) => {
 };
 
 const Expertise = () => (
-    <div>
+    <div className="bg-[#e7e4e4]">
         <div className="flex justify-center items-center">
-            <h1 className=' text-[4rem] font-bold text-[#F13F25]'>Our Expertise.</h1>
+            <h1 className=' text-[4rem] font-bold mt-10'>Our <span className='text-[#F13F25]'>Expertise.</span></h1>
         </div>
-        <div className="mt-20 flex flex-col">
+        <div className="mt-20 flex flex-col pb-24">
             <VerticalTimeline lineColor="#f07663">
                 {expertises.map((expertise, index) => (
                     <ExpertiseCard

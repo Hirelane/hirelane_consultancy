@@ -2,9 +2,9 @@ import integration from '../assets/integration.png'
 import collaboration from '../assets/collaboration.png'
 
 const USP = () => (
-    <>
+    <div>
         <div className="ml-24">
-            <h1 className='mt-10 text-[4rem] font-bold text-[#F13F25]'>What Differentiates Us?</h1>
+            <h1 className='mt-10 text-[4rem] font-bold'>What <span className='text-[#F13F25]'>Differentiates</span> Us?</h1>
         </div>
         <div className=' mx-24 flex flex-row justify-center overflow-hidden my-20'>
             <div className='px-10 flex flex-col items-start justify-center bg-[#ebebea]'>
@@ -31,7 +31,7 @@ const USP = () => (
                 <p className='text-[1rem] font-normal mt-2 w-[600px]'>Unlock effective collaboration with personalized Team and Remote Coaching, coupled with 360-degree feedback and performance monitoring to help teams and remote developers thrive.</p>
             </div>
         </div>
-    </>
+    </div>
 )
 
 export default USP;

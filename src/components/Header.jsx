@@ -4,7 +4,7 @@ import SendIcon from '@mui/icons-material/Send';
 import '@fontsource/roboto/400.css';
 
 const Header = () => (
-    <div className='flex flex-row justify-between mt-[150px] bg co'>
+    <div className='flex flex-row justify-between'>
         <div className='w-[40%] ml-24 flex flex-col mt-[100px]'>
             <h2 className='text-[2.5rem] font-light'>
                 Where talent meets

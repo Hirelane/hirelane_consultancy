@@ -70,4 +70,32 @@ const expertises = [
     }
 ]
 
-export { talents, expertises };
+const reasons = [
+    {
+        title: "Seamless Integration",
+        icon: creative,
+        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+    }, {
+        title: "Seamless Integration",
+        icon: tech,
+        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+    }, {
+        title: "Seamless Integration",
+        icon: creative,
+        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+    }, {
+        title: "Seamless Integration",
+        icon: tech,
+        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+    }, {
+        title: "Seamless Integration",
+        icon: creative,
+        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+    }, {
+        title: "Seamless Integration",
+        icon: creative,
+        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+    }
+]
+
+export { talents, expertises, reasons };

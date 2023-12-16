@@ -30,7 +30,7 @@ const Talent = () => (
         <div className="flex flex-row w-[50vw] flex-wrap">
             {
                 talents.map((talent) => (
-                    <TalentCard title={talent.title} desc={talent.desc} icon=   {talent.icon} />
+                    <TalentCard title={talent.title} desc={talent.desc} icon={talent.icon} />
                 ))
             }
         </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import hlc_logo_sq from '../assets/hlc_logo_long.png'
 
 const Navbar = () => (
-    <nav className="w-full flex items-center py-5 fixed top-0 z-20 shadow-md bg-gray-900">
+    <nav className="w-full flex items-center py-5 top-0 z-20 shadow-md bg-gray-900">
         <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
             <img
                 src={hlc_logo_sq}
