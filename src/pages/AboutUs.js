@@ -1,6 +1,6 @@
 import '../App.css';
 
-const AboutUs = () => {
+const Aboutus = () => {
     return (
         <>
         
@@ -8,4 +8,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs;
+export default Aboutus;
