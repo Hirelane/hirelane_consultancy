@@ -1,6 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { expertises } from "../data";
 import "react-vertical-timeline-component/style.min.css"
+import AnimatedUnderline from "./AnimatedUnderline";
 
 const ExpertiseCard = ({expertise}) => {
     return (
@@ -38,9 +39,9 @@ const ExpertiseCard = ({expertise}) => {
 };
 
 const Expertise = () => (
-    <div className="bg-[#e7e4e4]">
+    <div className="bg-[#0f0e0e]">
         <div className="flex justify-center items-center">
-            <h1 className=' text-[4rem] font-bold mt-10'>Our <span className='text-[#F13F25]'>Expertise.</span></h1>
+            <h1 className=' text-[4rem] font-bold text-[#FFFFFF] mt-10'>Our <span className='text-[#F13F25]'><AnimatedUnderline /></span></h1>
         </div>
         <div className="mt-20 flex flex-col pb-24">
             <VerticalTimeline lineColor="#f07663">
