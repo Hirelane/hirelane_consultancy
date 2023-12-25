@@ -9,6 +9,7 @@ import Whyus from './components/Whyus';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
+import Recruitment from './pages/Recruitment';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/aboutUs' element={<Aboutus />}></Route>
+      <Route path='/recruitmentProcess' element={<Recruitment />}></Route>
     </Routes>
     <Footer/>
     </div>
