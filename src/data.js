@@ -122,4 +122,20 @@ const processes = [
     }
 ]
 
-export { talents, expertises, reasons, processes };
+const helps = [
+    {
+        title: '96.5%',
+        desc: 'unfit candidates are filtered out'
+    }, {
+        title: 'Eliminates',
+        desc: 'the need for HR for cultural, language, and background checks'
+    }, {
+        title: 'Zero',
+        desc: 'reliance on technical recruiters'
+    }, {
+        title: '75%',
+        desc: 'Reduction in the guesswork for hiring managers'
+    }
+]
+
+export { talents, expertises, reasons, processes, helps };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnimatedUnderline = () => {
+const AnimatedUnderline = ({text}) => {
   return (
     <div style={{ position: 'relative', display: 'inline-block' }}>
       <span
@@ -16,7 +16,7 @@ const AnimatedUnderline = () => {
         }}
       />
       <span style={{ zIndex: 1 }}>
-        Expertise.
+        {text}
       </span>
     </div>
   );

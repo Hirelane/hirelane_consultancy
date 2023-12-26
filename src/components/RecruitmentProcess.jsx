@@ -32,7 +32,7 @@ const RecruitmentProcess = () => {
     return (
         <>
             <div className="flex justify-center items-center">
-                <h1 className=' text-[4rem] font-bold text-[#000000] mt-10'>Our <span className='text-[#F13F25]'>Recruitment Process.</span></h1>
+                <h1 className=' text-[4rem] font-bold text-[#000000] mt-10'>Our <span className='text-[#F13F25]'><AnimatedUnderline text={'Recruitment Process.'}/></span></h1>
             </div>
             <div className="mt-20 flex flex-col pb-24">
                 <VerticalTimeline lineColor="#f07663" className="flex flex-col items-center">
