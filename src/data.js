@@ -98,4 +98,28 @@ const reasons = [
     }
 ]
 
-export { talents, expertises, reasons };
+const processes = [
+    {
+        title: 'Screeing and Shortlisting',
+        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        icon: tech
+    }, {
+        title: 'Screeing and Shortlisting',
+        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        icon: tech
+    }, {
+        title: 'Screeing and Shortlisting',
+        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        icon: tech
+    }, {
+        title: 'Screeing and Shortlisting',
+        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        icon: tech
+    }, {
+        title: 'Screeing and Shortlisting',
+        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        icon: tech
+    }
+]
+
+export { talents, expertises, reasons, processes };
