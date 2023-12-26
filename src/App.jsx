@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import Recruitment from './pages/Recruitment';
+import HowItWorks from './pages/HowItWorks';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/aboutUs' element={<Aboutus />}></Route>
       <Route path='/recruitmentProcess' element={<Recruitment />}></Route>
+      <Route path='/howItWorks' element={<HowItWorks />}></Route>
     </Routes>
     <Footer/>
     </div>

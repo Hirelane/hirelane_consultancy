@@ -49,6 +49,14 @@ const Navbar = () => (
                   color: '#FFFFFF' 
                 },
             }}><Link to='/recruitmentProcess' className='text-white hover:text-white duration-500'>Recruitment Process</Link></Button>
+                <Button variant="outlined" className='md:ml-8 text-xl md:my-0 my-7' sx={{
+                borderColor: '#F13F25',
+                '&:hover': {
+                  backgroundColor: '#F13F25',
+                  borderColor: '#F13F25',
+                  color: '#FFFFFF' 
+                },
+            }}><Link to='/howItWorks' className='text-white hover:text-white duration-500'>How It Works</Link></Button>
             </div>
 
         </div>
