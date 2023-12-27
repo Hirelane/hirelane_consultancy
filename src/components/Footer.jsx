@@ -1,5 +1,6 @@
 import hirelaneLogo from '../assets/hlc_logo_long.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
     <div className="flex bg-[#000000] flex-row items-center justify-between py-10">
@@ -20,9 +21,9 @@ const Footer = () => (
             </div>
             <div className='flex flex-col'>
                 <p className='text-white font-semibold text-[1.2rem]'>About</p>
-                <p className='text-white font-light'>About us</p>
-                <p className='text-white font-light'>Recruitment Process</p>
-                <p className='text-white font-light'>How It Works</p>
+                <Link to='/aboutUs' className='text-white font-light hover:text-[#f13f25] duration-300'>About us</Link>
+                <Link to='/recruitmentProcess' className='text-white font-light hover:text-[#f13f25] duration-300'>Recruitment Process</Link>
+                <Link to='/howItWorks' className='text-white font-light hover:text-[#f13f25] duration-300'>How It Works</Link>
             </div>
             <div className='flex flex-col'>
                 <p className='text-white font-semibold text-[1.2rem]'>Contact Us</p>
