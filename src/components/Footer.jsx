@@ -1,6 +1,36 @@
+import hirelaneLogo from '../assets/hlc_logo_long.png';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 const Footer = () => (
-    <>
-    </>
+    <div className="flex bg-[#000000] flex-row items-center justify-between py-10">
+        <div className=' ml-20'>
+            <img src={hirelaneLogo} alt="hirelane logo" className='w-[330px] object-contain'/>
+        </div>
+        <div className="flex flex-row gap-8 mr-10 flex-wrap">
+            <div className='flex flex-col justify-center items-center'>
+                <p className='text-white font-semibold text-[1.2rem]'>Follow Us</p>
+                <a href="https://www.linkedin.com/in/kriti-kumar-998a931b1/" target="_blank" rel="noopener noreferrer">
+                    <div className='flex flex-row justify-center items-center'>
+                    
+                      <LinkedInIcon sx={{ color: '#F13F25', fontSize: 40 }} className='my-5' />
+                      <p className='text-white font-light hover:text-[#f13f25] duration-300'>Hirelane Consultancy</p>
+                    
+                    </div>
+                </a>
+            </div>
+            <div className='flex flex-col'>
+                <p className='text-white font-semibold text-[1.2rem]'>About</p>
+                <p className='text-white font-light'>About us</p>
+                <p className='text-white font-light'>Recruitment Process</p>
+                <p className='text-white font-light'>How It Works</p>
+            </div>
+            <div className='flex flex-col'>
+                <p className='text-white font-semibold text-[1.2rem]'>Contact Us</p>
+                <p className='text-white font-light'>For Employers</p>
+                <p className='text-white font-light'>For Candidates</p>
+            </div>
+        </div>
+    </div>
 )
 
 export default Footer;
