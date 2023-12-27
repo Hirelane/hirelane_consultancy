@@ -8,9 +8,11 @@ const WorksCard = ({work}) => {
         <VerticalTimelineElement
             className="w-[700px] ml-0"
             contentStyle={{
-                background: "#FBFAF8",
+                background: "#EBEBEA",
                 width: '800px',
-                marginLeft: '170px'
+                marginLeft: '170px',
+                boxShadow: 'none',
+                borderRadius: '0.75rem'
             }}
             iconStyle={{ background: '#f07663', fontSize:'2000px', borderColor: '#000000', width: '100px', height:'100px', marginLeft: '40px'}}
             icon={

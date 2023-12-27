@@ -11,7 +11,7 @@ const Header = () => (
             </h2>
             <h1 className=' text-[6rem] font-bold text-[#F13F25]'>TRIUMPH.</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores nam voluptate rem ratione minus omnis, ipsa porro eius architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, est.</p>
-            <Button variant='contained' endIcon={<SendIcon />} className='w-[25%]' 
+            <Button variant='contained' endIcon={<SendIcon />} className='w-[35%]' 
             sx={{
                 my: 5,
                 backgroundColor: '#F13F25',

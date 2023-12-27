@@ -9,6 +9,7 @@ const ExpertiseCard = ({expertise}) => {
         <VerticalTimelineElement
             contentStyle={{
                 background: "#EBEBEA",
+                borderRadius: '0.75rem'
             }}
 
             contentArrowStyle={{ borderRight: "7px solid #232631" }}

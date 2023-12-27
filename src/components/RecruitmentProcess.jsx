@@ -5,10 +5,11 @@ import pageBG from '../assets/pageBG.jpg'
 
 const ProcessCard = ({process}) => {
     return (
-        <VerticalTimelineElement className="w-[700px]"
+        <VerticalTimelineElement className="w-[900px]"
             contentStyle={{
                 background: "#EBEBEA",
-                width: '300px'
+                width: '400px',
+                borderRadius: '0.75rem'
             }}
 
             contentArrowStyle={{ borderRight: "7px solid #EBEBeA" }}
@@ -23,7 +24,7 @@ const ProcessCard = ({process}) => {
             }
         >
             
-            <h3 className="text-[2rem] font-bold">{process.title}</h3>
+            <h3 className="text-[2rem] text-center w-full font-bold">{process.title}</h3>
             <h3 className="text-[#353535] font-light text-[1.1rem]">{process.desc}</h3>
         </VerticalTimelineElement>
     );
