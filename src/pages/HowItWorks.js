@@ -7,7 +7,7 @@ const HowItWorks = () => {
         <>
             <HowItWorksHeader />
             <HowItWorksTimeline />
-            <HowItWorksStories />
+            {/* <HowItWorksStories /> */}
         </>
     )
 }

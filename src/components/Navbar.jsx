@@ -1,66 +1,65 @@
 import { Link } from "react-router-dom";
 import { Button } from '@mui/material';
 import hlc_logo_sq from '../assets/hlc_logo_long.png'
+import { useState } from "react";
 
-const Navbar = () => (
+const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  return (
     <nav className="w-full flex items-center py-5 top-0 z-20 shadow-md bg-black">
-        <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
+        <div className="w-full flex justify-center gap-[40vw] items-center max-w-7x1 mx-auto">
             <img
                 src={hlc_logo_sq}
                 alt="HLC Logo"
                 className=" w-60 object-contain"
             />
 
-            {/* <ul className='list-none mr-4 hidden sm:flex flex-row gap-10'>
-                <li className='md:ml-8 text-xl md:my-0 my-7'><Link to='/' className='text-white hover:text-gray-400 duration-500'>Home</Link></li>
-                <li className='md:ml-8 text-xl md:my-0 my-7'><Link to='/aboutUs' className='text-white hover:text-gray-400 duration-500'>About Us</Link></li>
-                <li className='md:ml-8 text-xl md:my-0 my-7'><Link to='/contactUs' className='text-white hover:text-gray-400 duration-500'>Contact Us</Link></li>
-            </ul> */}
             <div className="list-none mr-4 hidden sm:flex flex-row gap-10">
-                <Button variant="outlined" className='md:ml-8 text-xl md:my-0 my-7' sx={{
-                borderColor: '#F13F25',
-                '&:hover': {
-                  backgroundColor: '#F13F25',
-                  color: '#FFFFFF', 
-                  borderColor: '#F13F25',
-                },
-            }}><Link to='/' className='text-white hover:text-white duration-500'>Home</Link></Button>
-                <Button variant="outlined" className='md:ml-8 text-xl md:my-0 my-7' sx={{
-                borderColor: '#F13F25',
-                '&:hover': {
-                  backgroundColor: '#F13F25',
-                  borderColor: '#F13F25',
-                  color: '#FFFFFF' 
-                },
-            }}><Link to='/aboutUs' className='text-white hover:text-white duration-500'>About Us</Link></Button>
-                <Button variant="outlined" className='md:ml-8 text-xl md:my-0 my-7' sx={{
-                borderColor: '#F13F25',
-                '&:hover': {
-                  backgroundColor: '#F13F25',
-                  borderColor: '#F13F25',
-                  color: '#FFFFFF' 
-                },
-            }}><Link to='/contactUs' className='text-white hover:text-white duration-500'>Contact Us</Link></Button>
-                <Button variant="outlined" className='md:ml-8 text-xl md:my-0 my-7' sx={{
-                borderColor: '#F13F25',
-                '&:hover': {
-                  backgroundColor: '#F13F25',
-                  borderColor: '#F13F25',
-                  color: '#FFFFFF' 
-                },
-            }}><Link to='/recruitmentProcess' className='text-white hover:text-white duration-500'>Recruitment Process</Link></Button>
-                <Button variant="outlined" className='md:ml-8 text-xl md:my-0 my-7' sx={{
-                borderColor: '#F13F25',
-                '&:hover': {
-                  backgroundColor: '#F13F25',
-                  borderColor: '#F13F25',
-                  color: '#FFFFFF' 
-                },
-            }}><Link to='/howItWorks' className='text-white hover:text-white duration-500'>How It Works</Link></Button>
+                <Link to='/' className='text-white hover:text-[#f13f25] duration-300'>Home</Link>
+                
+                
+                <button
+                  onClick={toggleDropdown}
+                  className="text-white hover:text-[#f13f25] duration-300"
+                >
+                  Why Hirelane
+                </button>
+                {showDropdown && (
+                  <div className="absolute flex flex-col z-10 mt-20 bg-black rounded-md shadow-lg">
+                    <Link
+                      to="/aboutUs"
+                      className="block px-4 py-2 text-white hover:text-[#f13f25] duration-300"
+                      onClick={toggleDropdown}
+                    >
+                      About Us
+                    </Link>
+                    <Link
+                      to="/recruitmentProcess"
+                      className="block px-4 py-2 text-white hover:text-[#f13f25] duration-300"
+                      onClick={toggleDropdown}
+                    >
+                      Recruitment Process
+                    </Link>
+                    <Link
+                      to="/howItWorks"
+                      className="block px-4 py-2 text-white hover:text-[#f13f25] duration-300"
+                      onClick={toggleDropdown}
+                    >
+                      How It Works
+                    </Link>
+                  </div>
+                )}
+                <Link to='/contactUs' className='text-white hover:text-[#f13f25] duration-300'>Contact Us</Link>
             </div>
 
         </div>
     </nav>
-)
+  )
+}
 
 export default Navbar;
