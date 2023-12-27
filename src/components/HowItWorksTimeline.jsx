@@ -1,21 +1,21 @@
 import AnimatedUnderline from "./AnimatedUnderline";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { processes } from "../data";
+import { howItWorks } from "../data";
 
-const ProcessCard = ({process}) => {
+const WorksCard = ({work}) => {
     return (
         <VerticalTimelineElement
             className="w-[700px] ml-0"
             contentStyle={{
-                background: "#EBEBEA",
-                width: '600px',
+                background: "#FBFAF8",
+                width: '800px',
                 marginLeft: '170px'
             }}
             iconStyle={{ background: '#f07663', fontSize:'2000px', borderColor: '#000000', width: '100px', height:'100px', marginLeft: '40px'}}
             icon={
                 <div className="flex justify-center items-center w-full h-full">
                     <img
-                        src={process.icon}
+                        src={work.icon}
                         className="w-[50%] h-[50%] object-contain"
                     />
                 </div>
@@ -23,8 +23,31 @@ const ProcessCard = ({process}) => {
         >
             {/* Wrap the content in a div with ml-auto */}
             <div>
-                <h3 className="text-[2rem] font-bold">{process.title}</h3>
-                <h3 className="text-[#353535] font-light text-[1.1rem]">{process.desc}</h3>
+                <h3 className="text-[2rem] font-bold">{work.title}</h3>
+                <ul className="mt-5 list-disc ml-5 space-y-2">
+                    {work.points.map((point, index) => (
+                        <li
+                            key={`work-point-${index}`}
+                            className="tracking-wider pl-1 text-[#353535] font-light text-[1.1rem]"
+                        >
+                            {point}
+                        </li>
+                    ))}
+                </ul>
+                
+                <div>
+                    {work.noteTitle.length > 0 && (
+                    <div className="mb-4">
+                        {work.noteTitle.map((title, i) => (
+                        <div className="bg-[#f07663] p-4 rounded-xl m-4">
+                            <h3 className="text-black text-[1.1rem] font-semibold">{title}<span className="text-[#353535] text-[1.1rem] font-light">{work.noteDesc[i]}</span></h3>
+                            
+                        </div>
+                        ))}
+                    </div>
+                    )}
+                </div>
+                
             </div>
         </VerticalTimelineElement>
 
@@ -41,10 +64,10 @@ const HowItWorksTimeline = () => {
             </div>
             <div className="mt-20 flex flex-col ml-[300px] pb-24">
                 <VerticalTimeline lineColor="#000000" className="flex flex-col" layout="1-column-left">
-                    {processes.map((process, index) => (
-                        <ProcessCard
-                            key={`process-${index}`}
-                            process={process}
+                    {howItWorks.map((work, index) => (
+                        <WorksCard
+                            key={`work-${index}`}
+                            work={work}
                             className='ml-0'
                         />
                     ))}

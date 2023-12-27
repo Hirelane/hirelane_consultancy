@@ -138,4 +138,40 @@ const helps = [
     }
 ]
 
-export { talents, expertises, reasons, processes, helps };
+const howItWorks = [
+    {
+        title: 'Share the Job Description',
+        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
+                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
+                'The more information you share, the better matchmaking we would be able to do for you.'],
+        icon: tech,
+        noteTitle: ['#Pre-interview Assesment - ', ],
+        noteDesc: ['If you want any talents to take any additional assessment to better judge their technical capabilities, you can share your tests and the candidate would be more than willing to complete them.',]
+    }, {
+        title: 'Share the Job Description',
+        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
+                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
+                'The more information you share, the better matchmaking we would be able to do for you.'],
+        icon: tech,
+        noteTitle: [],
+        noteDesc:[]
+    }, {
+        title: 'Share the Job Description',
+        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
+                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
+                'The more information you share, the better matchmaking we would be able to do for you.'],
+        icon: tech,
+        noteTitle: ['#Pre-interview Assesment - ', '#No-obligation interview - '],
+        noteDesc: ['If you want any talents to take any additional assessment to better judge their technical capabilities, you can share your tests and the candidate would be more than willing to complete them.', 'You are not obligated to hire unless you are 100% confident and happy with the talent.']
+    }, {
+        title: 'Share the Job Description',
+        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
+                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
+                'The more information you share, the better matchmaking we would be able to do for you.'],
+        icon: tech,
+        noteTitle: [],
+        noteDesc:[]
+    }
+]
+
+export { talents, expertises, reasons, processes, helps, howItWorks };
