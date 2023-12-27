@@ -2,7 +2,7 @@ import cardBG from '../assets/exertiseBG.jpg'
 
 const MissionVision = () => {
     return (
-        <div className="flex flex-row justify-center mt-10 items-center gap-[150px]">
+        <div className="flex flex-row justify-center my-32 items-center gap-[150px]">
             <div className="flex flex-col justify-between items-center h-[500px] w-[600px] bg-black rounded-3xl border-[#F13F25] border-2 shadow-xl">
                 <p className="text-[2rem] font-semibold text-white border-b-2 border-[#F13F25] rounded-[2rem] p-2 text-center w-[80%] mt-10 transition duration-300 ease-in-out hover:bg-[#F13F25] hover:text-black">Our Mission</p>
                 <p className="font-medium mb-10 px-10 pb-16 text-[#FFFFFF]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, ex, illum voluptatem magni praesentium nulla quae neque inventore necessitatibus quis dolorem deserunt eius quas sed culpa, incidunt laborum id voluptas aliquid quos. Nobis repellat ipsam consequuntur blanditiis hic! Itaque, nulla? Debitis dolorum unde iusto corporis quae adipisci magnam fugit officia quasi placeat beatae voluptatem, harum expedita ex quidem sunt inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, fuga!</p>

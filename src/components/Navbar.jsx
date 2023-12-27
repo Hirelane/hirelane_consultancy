@@ -20,7 +20,7 @@ const Navbar = () => {
             />
 
             <div className="list-none mr-4 hidden sm:flex flex-row gap-10">
-                <Link to='/' className='text-white hover:text-[#f13f25] duration-300'>Home</Link>
+                <Link to='/' className='text-white hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Home</Link>
                 
                 
                 <button
@@ -54,7 +54,7 @@ const Navbar = () => {
                     </Link>
                   </div>
                 )}
-                <Link to='/contactUs' className='text-white hover:text-[#f13f25] duration-300'>Contact Us</Link>
+                <Link to='/contactUs' className='text-white hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Contact Us</Link>
             </div>
 
         </div>
