@@ -1,6 +1,7 @@
 import AnimatedUnderline from "./AnimatedUnderline";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { howItWorks } from "../data";
+import pageBG from '../assets/pageBG.jpg'
 
 const WorksCard = ({work}) => {
     return (
@@ -58,7 +59,12 @@ const WorksCard = ({work}) => {
 
 const HowItWorksTimeline = () => {
     return (
-        <>
+        <div style={{
+            background: `url(${pageBG})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+        }}>
             <div className="flex justify-center items-center">
                 <h1 className=' text-[4rem] font-bold text-[#000000] mt-10'>How It <span className='text-[#F13F25]'><AnimatedUnderline text={'Works.'}/></span></h1>
             </div>
@@ -73,7 +79,7 @@ const HowItWorksTimeline = () => {
                     ))}
                 </VerticalTimeline>
             </div>
-        </>
+        </div>
     )
 }
 

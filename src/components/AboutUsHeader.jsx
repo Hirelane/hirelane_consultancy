@@ -1,10 +1,16 @@
 import leftImg from '../assets/about-header-left.jpg';
 import midImg from '../assets/about-header-mid.jpg';
 import rightImg from '../assets/about-header-right.jpg';
+import pageBG from '../assets/pageBG.jpg';
 
 const AboutUsHeader = () => {
     return (
-        <div className="flex flex-col justify-center items-center py-20">
+        <div className="flex flex-col justify-center items-center py-20" style={{
+            background: `url(${pageBG})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+        }}>
             <p className='text-[1.4rem] font-sans mb-1'>ABOUT US</p>
             <p className='text-[2rem] font-semibold'>We are unlocking IT potential</p>
             <p className='text-[1.2rem] text-center font-light w-[600px]'>We're here to help organizations not just survive but thrive in today's ever-changing landscape through IT innovation.</p>

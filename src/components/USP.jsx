@@ -1,8 +1,14 @@
 import integration from '../assets/integration.png'
 import collaboration from '../assets/collaboration.png'
+import pageBG from '../assets/pageBG.jpg'
 
 const USP = () => (
-    <div>
+    <div style={{
+        background: `url(${pageBG})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }}>
         <div className="ml-24">
             <h1 className='mt-10 text-[4rem] font-bold'>What <span className='text-[#F13F25]'>Differentiates</span> Us?</h1>
         </div>
