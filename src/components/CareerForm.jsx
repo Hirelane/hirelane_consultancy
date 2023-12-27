@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { professions } from '../data.js';
 import blackBG from '../assets/exertiseBG.jpg'
 import pageBG from '../assets/pageBG.jpg'
+import { collection, addDoc } from 'firebase/firestore';
+import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { db } from '../Firebase.js';
 
 const CareerForm = () => {
 
@@ -18,27 +21,50 @@ const CareerForm = () => {
         cv: null
     });
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setForm({
-          fname: '',
-          surname: '',
-          age: '',
-          email: "",
-          gender: 'male',
-          profession: professions.at(0),
-          workex: '',
-          cv: null
-        });
+
+        try {
+            const docRef = await addDoc(collection(db, 'careerResponses'), {
+                firstName: form.fname,
+                lastName: form.surname,
+                age: form.age,
+                email: form.email,
+                gender: form.gender,
+                profession: form.profession,
+                workex: form.workex,
+                cv: form.cv,
+            });
+
+            setForm({
+                fname: '',
+                surname: '',
+                age: '',
+                email: "",
+                gender: 'male',
+                profession: professions.at(0),
+                workex: '',
+                cv: null
+            });
+        } catch (e) {
+            console.log(e);
+        }
+
+        
     }
 
-    const handleFileChange = (e) => {
+    const handleFileChange = async (e) => {
         const file = e.target.files[0];
-        setForm({ ...form, cv: file });
+        const userEmail = form.email; 
+        const fileName = `resume_${userEmail}.pdf`;
+        const storage = getStorage();
+        const storageRef = ref(storage, `resumes/${fileName}`);
+        await uploadBytes(storageRef, file);
+        const downloadURL = await getDownloadURL(storageRef);
+        setForm(prevForm => ({ ...prevForm, cv: downloadURL }));
     };
 
     const handleChange = (e) => {
-        // console.log(e.target.value);
         const { name, value } = e.target;
         setForm({ ...form, [name]: value })
     }
@@ -161,9 +187,10 @@ const CareerForm = () => {
                     className='w-[45%] ml-[5%] flex flex-col mt-5 mb-2'>
                     <span className='font-bold text-white'>Work Experience: </span>
                     <input
-                      name='fname'
+                      name='workex'
                       value={form.workex}
                       required
+                      type='number'
                       onChange={handleChange}
                       placeholder='Work experience in years'
                       className='rounded-xl w-[60%] mt-1 bg-[#222222] border-[#757575] text-[#b0b0b0] p-2 border-b-2'
