@@ -54,7 +54,7 @@ const Navbar = () => {
                     </Link>
                   </div>
                 )}
-                <Link to='/contactUs' className='text-white hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Contact Us</Link>
+                <Link to='/careers' className='text-white hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Careers</Link>
             </div>
 
         </div>

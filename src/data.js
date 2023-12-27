@@ -174,4 +174,16 @@ const howItWorks = [
     }
 ]
 
-export { talents, expertises, reasons, processes, helps, howItWorks };
+const professions = [
+    'ReactJs Developers',
+    'PHP Developers',
+    'SEM & PPC Specialist',
+    'UX/UI Designers',
+    'WordPress Developers',
+    'NodeJs Developers',
+    'SEO Specialists',
+    'Laravel Developers',
+    'Programmatic Experts',
+]
+
+export { talents, expertises, reasons, processes, helps, howItWorks, professions };

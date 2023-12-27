@@ -1,16 +1,12 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Talent from './components/Talent';
-import USP from './components/USP';
-import Expertise from './components/Expertise';
-import Whyus from './components/Whyus';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import Recruitment from './pages/Recruitment';
 import HowItWorks from './pages/HowItWorks';
+import Careers from './pages/Careers';
 
 
 const App = () => {
@@ -22,6 +18,7 @@ const App = () => {
       <Route path='/aboutUs' element={<Aboutus />}></Route>
       <Route path='/recruitmentProcess' element={<Recruitment />}></Route>
       <Route path='/howItWorks' element={<HowItWorks />}></Route>
+      <Route path='/careers' element={<Careers />}></Route>
     </Routes>
     <Footer/>
     </div>
