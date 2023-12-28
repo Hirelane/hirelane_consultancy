@@ -3,14 +3,14 @@ import collaboration from '../assets/collaboration.png'
 import pageBG from '../assets/pageBG.jpg'
 
 const USP = () => (
-    <div style={{
+    <div className='pb-10' style={{
         background: `url(${pageBG})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }}>
         <div className="ml-24">
-            <h1 className='mt-10 text-[4rem] font-bold'>What <span className='text-[#F13F25]'>Differentiates</span> Us?</h1>
+            <h1 className='pt-10 text-[4rem] font-bold'>What <span className='text-[#F13F25]'>Differentiates</span> Us?</h1>
         </div>
         <div className=' mx-24 flex flex-row justify-center overflow-hidden my-20'>
             <div className='px-10 flex flex-col items-start justify-center bg-[#ebebea]'>

@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex items-center py-5 top-0 z-20 shadow-md bg-black">
-        <div className="w-full flex justify-center gap-[60vw] items-center max-w-7x1 mx-auto">
+        <div className="w-full flex justify-center gap-[40vw] items-center max-w-7x1 mx-auto">
             <img
                 src={hlc_logo_sq}
                 alt="HLC Logo"
@@ -55,6 +55,7 @@ const Navbar = () => {
                   </div>
                 )}
                 <Link to='/careers' className='text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Careers</Link>
+                <Link to='/pricing' className='text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Pricing</Link>
             </div>
 
         </div>

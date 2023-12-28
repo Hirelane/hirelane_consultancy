@@ -16,7 +16,7 @@ const TalentCard = ({title, desc, icon}) => (
 );
 
 const Talent = () => (
-    <div className="mt-20 flex flex-row justify-between flex-wrap bg-[#595856] p-9" style={{
+    <div className="flex flex-row justify-between flex-wrap bg-[#595856] p-9" style={{
         backgroundImage: `url(${talentBG})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

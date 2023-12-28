@@ -186,4 +186,28 @@ const professions = [
     'Programmatic Experts',
 ]
 
-export { talents, expertises, reasons, processes, helps, howItWorks, professions };
+const packages = [
+    {
+      title: 'Hire a talent for short-term',
+      desc: 'Ideal when you want to hire contractors for a fixed-term',
+      salary: '$499',
+      platformFee: '25%',
+      features: ['Resume Screening', 'Payout Management', 'Email Support', '14 Days Easy Cancellation'],
+    },
+    {
+      title: 'Hire a talent for long-term',
+      desc: 'Best when you want to hire on ongoing basis',
+      salary: '$799',
+      platformFee: '35%',
+      features: ['Resume Screening', 'Payout Management', 'Phone Support', 'Candidate Matching', '30 Days Easy Cancellation'],
+    },
+    {
+      title: 'Direct-hire on your payroll',
+      desc: 'Perfect when you want to hire and manage payroll on your own',
+      salary: '$1299',
+      platformFee: '10%',
+      features: ['Resume Screening', 'Account management and support', 'Phone and Email Support', '90 Days Replacement'],
+    },
+  ];
+
+export { talents, expertises, reasons, processes, helps, howItWorks, professions, packages };

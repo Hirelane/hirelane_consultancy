@@ -1,11 +1,17 @@
 import { Button } from '@mui/material';
-import header_img from '../assets/header_img.jpg'
+import header_img from '../assets/homeHeader.png'
 import SendIcon from '@mui/icons-material/Send';
 import '@fontsource/roboto/400.css';
+import pageBG from '../assets/pageBG.jpg'
 
 const Header = () => (
-    <div className='flex flex-row justify-between'>
-        <div className='w-[40%] ml-24 flex flex-col mt-[100px]'>
+    <div className='flex flex-row justify-center pb-20' style={{
+        background: `url(${pageBG})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }}>
+        <div className='w-[40%] ml-10 flex flex-col mt-[100px]'>
             <h2 className='text-[2.5rem] font-light'>
                 Where talent meets
             </h2>
@@ -24,7 +30,7 @@ const Header = () => (
         <img
             src={ header_img }
             alt='header image'
-            className='w-[60%] overflow-hidden'
+            className='w-[40%] overflow-hidden'
         />
     </div>
 )
