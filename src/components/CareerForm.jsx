@@ -93,6 +93,7 @@ const CareerForm = () => {
               animate="show"
               variants={slideIn('right', "tween", 0.2, 1)}
               className=' lg:w-[50%] mx-auto mt-28'>
+                
               <form
                 id='feedbackForm'
                 onSubmit={handleSubmit}
@@ -102,6 +103,7 @@ const CareerForm = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                 }}>
+                  
                 <div className='flex flex-row justify-start flex-wrap'>
                   <label
                     className='w-[45%] ml-[5%] flex flex-col mt-5 mb-2'>

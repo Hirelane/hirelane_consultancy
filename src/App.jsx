@@ -8,6 +8,7 @@ import Recruitment from './pages/Recruitment';
 import HowItWorks from './pages/HowItWorks';
 import Careers from './pages/Careers';
 import Pricing from './pages/Pricing';
+import ContactUs from './pages/ContactUs';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/recruitmentProcess' element={<Recruitment />}></Route>
       <Route path='/howItWorks' element={<HowItWorks />}></Route>
       <Route path='/careers' element={<Careers />}></Route>
+      <Route path='/contactUs' element={<ContactUs/>}></Route>
       <Route path='/pricing' element={<Pricing />}></Route>
     </Routes>
     <Footer/>

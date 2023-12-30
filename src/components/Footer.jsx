@@ -27,8 +27,8 @@ const Footer = () => (
             </div>
             <div className='flex flex-col'>
                 <p className='text-white font-semibold text-[1.2rem]'>Contact Us</p>
-                <p className='text-white font-light'>For Employers</p>
-                <p className='text-white font-light'>For Candidates</p>
+                <Link to='/contactUs' className='text-white font-light hover:text-[#f13f25] duration-300'>For Employers</Link>
+                <Link to='/careers' className='text-white font-light hover:text-[#f13f25] duration-300'>For Candidates</Link>
             </div>
         </div>
     </div>

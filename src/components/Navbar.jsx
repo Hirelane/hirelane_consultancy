@@ -4,11 +4,24 @@ import hlc_logo_sq from '../assets/hlc_logo_long.png'
 import { useState } from "react";
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showHirelaneDropdown, setShowHirelaneDropdown] = useState(false);
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+  const toggleHirelaneDropdown = () => {
+    setShowHirelaneDropdown(!showHirelaneDropdown);
+    setShowContactDropdown(false);
   };
+
+  const [showContactDropdown, setShowContactDropdown] = useState(false);
+
+  const toggleContactDropdown = () => {
+    setShowContactDropdown(!showContactDropdown);
+    setShowHirelaneDropdown(false);
+  };
+
+  const toggleDropdowns = () => {
+    setShowContactDropdown(false);
+    setShowHirelaneDropdown(false);
+  }
 
   return (
     <nav className="w-full flex items-center py-5 top-0 z-20 shadow-md bg-black">
@@ -20,42 +33,65 @@ const Navbar = () => {
             />
 
             <div className="list-none mr-4 hidden sm:flex flex-row gap-10">
-                <Link to='/' className='text-white text-[1.2rem] font-semibold  hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Home</Link>
+                <Link to='/' className='text-white text-[1.2rem] font-semibold  hover:text-[#f13f25] duration-300' onClick={toggleDropdowns}>Home</Link>
                 
                 
                 <button
-                  onClick={toggleDropdown}
-                  className="text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300"
+                  onClick={toggleHirelaneDropdown}
+                  className="text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300 relative"
                 >
                   Why Hirelane
                 </button>
-                {showDropdown && (
+                {showHirelaneDropdown && (
                   <div className="absolute flex flex-col z-10 mt-20 bg-black rounded-md shadow-lg">
                     <Link
                       to="/aboutUs"
                       className="block px-4 py-2 text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300"
-                      onClick={toggleDropdown}
+                      onClick={toggleHirelaneDropdown}
                     >
                       About Us
                     </Link>
                     <Link
                       to="/recruitmentProcess"
                       className="block px-4 text-[1.2rem] font-semibold py-2 text-white hover:text-[#f13f25] duration-300"
-                      onClick={toggleDropdown}
+                      onClick={toggleHirelaneDropdown}
                     >
                       Recruitment Process
                     </Link>
                     <Link
                       to="/howItWorks"
                       className="block text-[1.2rem] font-semibold px-4 py-2 text-white hover:text-[#f13f25] duration-300"
-                      onClick={toggleDropdown}
+                      onClick={toggleHirelaneDropdown}
                     >
                       How It Works
                     </Link>
                   </div>
                 )}
-                <Link to='/careers' className='text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Careers</Link>
-                <Link to='/pricing' className='text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300' onClick={showDropdown && toggleDropdown}>Pricing</Link>
+                <button
+                  onClick={toggleContactDropdown}
+                  className="text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300 relative"
+                >
+                  Contact
+                </button>
+                {showContactDropdown && (
+                  <div className="absolute flex flex-col z-10 mt-20 ml-52 bg-black rounded-md shadow-lg">
+                    <Link
+                      to="/contactUs"
+                      className="block px-4 py-2 text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300"
+                      onClick={toggleContactDropdown}
+                    >
+                      Contact Us
+                    </Link>
+                    <Link 
+                      to='/careers' 
+                      className='block text-[1.2rem] font-semibold px-4 py-2 text-white hover:text-[#f13f25] duration-300' 
+                      onClick={toggleContactDropdown}
+                    >
+                      Careers
+                    </Link>
+                  </div>
+                )}
+                <Link to='/pricing' className='text-white text-[1.2rem] font-semibold hover:text-[#f13f25] duration-300' onClick={toggleDropdowns}>Pricing</Link>
             </div>
 
         </div>
