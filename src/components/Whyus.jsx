@@ -5,7 +5,7 @@ const ReasonCard = ({title, icon, desc}) => {
     return (
         <div className="flex bg-[#ffffff] rounded-xl p-5 flex-col w-[300px] items-start justify-between my-3">
             <img src={icon} alt="reasonIcon" className="w-15 h-15 rounded-[50%]" />
-            <h1 className="text-[1.4rem] font-semibold">{title}</h1>
+            <h1 className="text-[1.4rem] font-semibold text-center w-full">{title}</h1>
             <p className="mt-5 list-disc ml-5 space-y-2">{desc}</p>
         </div>
     )

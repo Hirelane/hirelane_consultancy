@@ -6,7 +6,7 @@ const TalentCard = ({title, desc, icon}) => (
         <img
             src={icon}
             alt="talentIcon"
-            className="w-15 h-15 p-2 object-contain rounded-[50%] m-4 bg-[#F13F25]"
+            className="w-[60px] h-[60px] p-2 object-contain rounded-[20%] m-4 bg-[#F13F25]"
         />
         <div className="flex flex-col justify-between items-start">
             <h1 className="text-[1.5rem] font-medium">{title}</h1>
