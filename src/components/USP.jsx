@@ -16,7 +16,7 @@ const USP = () => (
             <div className='px-10 flex flex-col items-start justify-center bg-[#ebebea]'>
                 <p className='text-[1.5rem] font-light'>INTEGRATION SERVICE</p>
                 <p className='text-[2.4rem] font-semibold w-[500px]'>We don’t just onboard, we <span className='text-[#F13F25]'>integrate</span> our developers</p>
-                <p className='text-[1rem] font-normal mt-2 w-[600px]'>We seamlessly integrate developers into your team and workflows.   fostering collaboration, ensuring cohesion, and providing ongoing support throughout your project's lifecycle.</p>
+                <p className='text-[1rem] font-normal mt-2 w-[600px]'>This ensures that the talent we bring into your organization not only possesses the requisite skills but also seamlessly aligns with your company's culture. This harmonious integration enhances productivity, fosters positive work environments, and contributes to long-term success.</p>
             </div>
             <img
                 src={integration}
@@ -34,7 +34,7 @@ const USP = () => (
             <div className='px-10 flex flex-col items-start justify-center bg-[#EBEBEA]'>
                 <p className='text-[1.5rem] font-light'>COLLABORATION SERVICE</p>
                 <p className='text-[2.4rem] font-semibold w-[500px]'>Unique <span className='text-[#F13F25]'>collaboration</span> support by our Team Coach</p>
-                <p className='text-[1rem] font-normal mt-2 w-[600px]'>Unlock effective collaboration with personalized Team and Remote Coaching, coupled with 360-degree feedback and performance monitoring to help teams and remote developers thrive.</p>
+                <p className='text-[1rem] font-normal mt-2 w-[600px]'>By working closely with our clients, understanding their unique needs, and fostering a collaborative partnership, we ensure that the talent we provide is not just a resource but an integral part of achieving your business goals. This collaborative synergy leads to innovative solutions, increased efficiency, and sustainable growth.</p>
             </div>
         </div>
     </div>

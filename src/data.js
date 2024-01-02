@@ -5,119 +5,115 @@ import analytics from './assets/analytics.png'
 
 const talents = [
     {
-        title: "Technology",
-        desc: "Crafting intelligent solutions for your business needs with cutting edge technology",
+        title: "Alignment",
+        desc: "Precisely matching talent with company objectives.",
         icon: tech
     }, {
-        title: "HR",
-        desc: "Crafting intelligent solutions for your business needs with cutting edge technology",
+        title: "Integration",
+        desc: "Fostering success through seamless cultural alignment",
         icon: hr
     }, {
-        title: "Creative",
-        desc: "Crafting intelligent solutions for your business needs with cutting edge technology",
+        title: "Recruitment",
+        desc: "Going beyond traditional methods for superior results",
         icon: creative
     }, {
-        title: "Analytics",
-        desc: "Crafting intelligent solutions for your business needs with cutting edge technology",
+        title: "Precision",
+        desc: "Tailored solutions for sustainable business growth",
         icon: analytics
     }
 ];
 
 const expertises = [
     {
-        title: "AI Developers",
+        title: "Sales and Marketing",
         icon: tech,
         iconBg: "#f07663",
         points: [
-            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
-            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
-            "Rigorously selecting and presenting the best AI candidates.",
-            "Participating in code reviews and providing constructive feedback  to other developers.",
+            "Strategic market insight for talent identification.",
+            "Proven record in recruiting revenue-driven professionals.",
+            "Customized solutions aligning with dynamic industry needs."
+
         ]
     },
     {
-        title: "Data Engineers",
+        title: "HR",
         icon: tech,
         iconBg: "#f07663",
         points: [
-            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
-            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
-            "Rigorously selecting and presenting the best AI candidates.",
-            "Participating in code reviews and providing constructive feedback  to other developers.",
+            "Precision talent solutions, culture-centric approach.",
+            "Strategic recognition of HR's pivotal role in success.",
+            "Collaborative partnerships for long-term talent synergy."
+
         ]
     },
     {
-        title: "Python Developers",
+        title: "Customer Support",
         icon: tech,
         iconBg: "#f07663",
         points: [
-            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
-            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
-            "Rigorously selecting and presenting the best AI candidates.",
-            "Participating in code reviews and providing constructive feedback  to other developers.",
+            "Expertise in recruiting key customer satisfaction roles.",
+            "Focus on individuals fostering loyalty and growth.",
+            "Tailored solutions for enhancing customer experiences."
+
         ]
     },
     {
-        title: "Cloud Engineers ",
+        title: "Business Operation",
         icon: tech,
         iconBg: "#f07663",
         points: [
-            "Delivering top-tier AI developers with deep expertise in cutting-edge technologies.",
-            "Providing AI talent with a track record of delivering successful solutions, backed by case studies and client testimonials.",
-            "Rigorously selecting and presenting the best AI candidates.",
-            "Participating in code reviews and providing constructive feedback  to other developers.",
+            "In-depth understanding of diverse industry intricacies.",
+            "Sourcing top talent for streamlined, efficient operations.",
+            "Solutions that contribute to overall business success."
+
         ]
     }
 ]
 
 const reasons = [
     {
-        title: "Seamless Integration",
+        title: "Top Talent",
         icon: creative,
-        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+        desc: "Elevate your workforce with our top-tier talent solutions."
     }, {
-        title: "Seamless Integration",
+        title: "Customized Solutions",
         icon: tech,
-        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+        desc: "Tailored strategies for your unique business needs and goals."
     }, {
-        title: "Seamless Integration",
+        title: "Quality",
         icon: creative,
-        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+        desc: "Delivering excellence in talent solutions for lasting business impact."
     }, {
-        title: "Seamless Integration",
+        title: "Cost Effectiveness",
         icon: tech,
-        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
+        desc: "Achieve strategic goals with our budget-friendly, efficient solutions."
     }, {
-        title: "Seamless Integration",
+        title: "Retention Focus",
         icon: creative,
-        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
-    }, {
-        title: "Seamless Integration",
-        icon: creative,
-        desc: "We blen our talent into your team like a fine wine, creating a harmonious collaboration that elevates your IT endeavors."
-    }
+        desc: "Achieve strategic goals with our budget-friendly, efficient solutions."
+    }, 
 ]
 
 const processes = [
     {
-        title: 'Screeing and Shortlisting',
-        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        title: 'Strategic Needs Assessment',
+        desc: 'We start by understanding your unique requirements and strategic goals.',
         icon: tech
     }, {
-        title: 'Screeing and Shortlisting',
-        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        title: 'Precision Candidate Sourcing',
+        desc: 'Utilizing targeted approaches, we identify and source top-tier candidates.',
         icon: tech
     }, {
-        title: 'Screeing and Shortlisting',
-        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        title: 'Customized Assessment & Screeing',
+        desc: 'We customize assessments to ensure the perfect match for your needs.',
         icon: tech
     }, {
-        title: 'Screeing and Shortlisting',
-        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        title: 'Cliend-Candidate Collaboration',
+        desc: 'Collaborate closely with you and candidates to build successful partnerships.',
         icon: tech
     }, {
-        title: 'Screeing and Shortlisting',
-        desc: 'We review tons of applications against our minimum criteria, their professional journey, and holistic background checks.',
+        title: 'Post-Placement Integration Support',
+        desc: 'Our commitment doesn\'t end at placement; we offer ongoing integration support',
         icon: tech
     }
 ]
@@ -140,37 +136,35 @@ const helps = [
 
 const howItWorks = [
     {
-        title: 'Share the Job Description',
-        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
-                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
-                'The more information you share, the better matchmaking we would be able to do for you.'],
-        icon: tech,
-        noteTitle: ['#Pre-interview Assesment - ', ],
-        noteDesc: ['If you want any talents to take any additional assessment to better judge their technical capabilities, you can share your tests and the candidate would be more than willing to complete them.',]
-    }, {
-        title: 'Share the Job Description',
-        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
-                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
-                'The more information you share, the better matchmaking we would be able to do for you.'],
+        title: 'Step 1: Share the Job Description',
+        points: ['Fill out our user-friendly form, providing comprehensive details about the role, responsibilities, required skills, market experience, and budget.',
+                'We also inquire about behavioral preferences to ensure a cultural fit.',],
         icon: tech,
         noteTitle: [],
-        noteDesc:[]
+        noteDesc: []
     }, {
-        title: 'Share the Job Description',
-        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
-                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
-                'The more information you share, the better matchmaking we would be able to do for you.'],
+        title: 'Step 2: Review & Shortlist the Matches',
+        points: ['Within a few days, we present the best-fit profiles for your review.',
+                'Shortlist candidates and share preferred interview slots.',
+                'For rare roles, we commit to super-sourcing efforts to find the right talent.'],
         icon: tech,
-        noteTitle: ['#Pre-interview Assesment - ', '#No-obligation interview - '],
-        noteDesc: ['If you want any talents to take any additional assessment to better judge their technical capabilities, you can share your tests and the candidate would be more than willing to complete them.', 'You are not obligated to hire unless you are 100% confident and happy with the talent.']
+        noteTitle: ['Pre-interview Assessments: '],
+        noteDesc:['If needed, you can request additional assessments to evaluate technical capabilities.']
     }, {
-        title: 'Share the Job Description',
-        points: ['Share complete roles, and responsibilities, must-have skills, necessary market experience, and budget.',
-                'On top of this, we’ll also ask certain behavioral questions to ensure that we not only find talent with technical skills but also someone who matches the vibe and culture that you have in your company.',
-                'The more information you share, the better matchmaking we would be able to do for you.'],
+        title: 'Step 3: Interview & Hire',
+        points: ['Conduct thorough assessments until you\'re confident.',
+                'Our pre-vetting process minimizes guesswork, enabling even non-technical interviewers to assess candidates based on the vibe.',
+                'No obligation to hire until you are fully satisfied.'],
         icon: tech,
-        noteTitle: [],
-        noteDesc:[]
+        noteTitle: ['No Risk Trial: ',],
+        noteDesc: ['Opt for a trial period (up to 2 weeks, based on availability) to build trust before making a final hiring decision.']
+    }, {
+        title: 'Step 4: Onboard & Manage',
+        points: ['Once you confirm a hire, we handle legalities, contracts, and ensure a seamless onboarding process.',
+                'A talent success coach remains involved to ensure optimal engagement.'],
+        icon: tech,
+        noteTitle: ['30-Days Replacement: ', 'Easy Cancellation: '],
+        noteDesc:['You have the option for a replacement within 30 days if you encounter challenges with the talent.', 'In case talent needs change, cancellation is an option with a 30-day notice period.']
     }
 ]
 

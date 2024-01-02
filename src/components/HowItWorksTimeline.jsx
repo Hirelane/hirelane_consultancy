@@ -67,8 +67,9 @@ const HowItWorksTimeline = () => {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
         }}>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center flex-col">
                 <h1 className=' text-[4rem] font-bold text-[#000000] mt-10'>How It <span className='text-[#F13F25]'><AnimatedUnderline text={'Works.'}/></span></h1>
+                <p className='w-[70%] text-[1.6rem] font-light text-center'>Right Matchmaking is at the core of everything that Hirelane does; thus, we invest significant time and effort to ensure the shortlisted talent perfectly aligns with your requirements.</p>
             </div>
             <div className="mt-20 flex flex-col ml-[300px] pb-24">
                 <VerticalTimeline lineColor="#000000" className="flex flex-col" layout="1-column-left">

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import blackBG from '../assets/exertiseBG.jpg';
 import emailjs from '@emailjs/browser';
 import pageBG from '../assets/pageBG.jpg';
+import formImg from '../assets/contactFormImg.png';
 
 //service_l8srwge
 //template_ijpo8pj
@@ -65,106 +66,110 @@ const ContactUsForm = () => {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
         }}>
-            <h1 className='font-bold text-[3rem]'>Hire Talents.</h1>
+            <h1 className='font-bold text-[3rem]'>Unlock tomorrow, today.</h1>
             <p className='font-light text-[1.2rem]'>Fill out this form, and our team will contact you shortly.</p>
-            <div className='w-[60%] mt-10'>
-                <form onSubmit={handleSubmit}
-                className='flex p-4 rounded-xl shadow-lg shadow-[#696969] flex-col' style={{
-                    background: `url(${blackBG})`,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                }}>
-                    <div className='flex flex-row'>
-                        <label className='flex flex-col mb-3 w-[50%]'>
+            <div className='w-full flex-row flex justify-center gap-[10%]'>
+                <div className='w-[40%] mt-10'>
+                    <form onSubmit={handleSubmit}
+                    className='flex p-4 rounded-xl shadow-lg shadow-[#696969] flex-col' style={{
+                        background: `url(${blackBG})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                    }}>
+                        <div className='flex flex-row gap-[10%]'>
+                            <label className='flex flex-col mb-3 w-[40%]'>
+                                <span className='text-[1.1rem] font-bold text-white'>
+                                    Your Name:
+                                </span>
+                                <input
+                                    type="text"
+                                    name='name'
+                                    required
+                                    value={form.name}
+                                    onChange={handleChange}
+                                    className='bg-transparent p-2 border-[1px] text-[#eaeaea] rounded-xl mt-2'
+                                    
+                                />
+                            </label>
+                            <label className='flex flex-col mb-3 w-[40%]'>
+                                <span className='text-[1.1rem] font-bold text-white'>
+                                    Company's Name:
+                                </span>
+                                <input
+                                    type="text"
+                                    name='company'
+                                    required
+                                    value={form.company}
+                                    onChange={handleChange}
+                                    className='bg-transparent p-2 border-[1px] text-[#eaeaea] rounded-xl mt-2'
+                                    
+                                />
+                            </label>
+                        </div>
+                        <div className='flex flex-row gap-[10%]'>
+                            <label className='flex flex-col mb-3 w-[40%]'>
+                                <span className='text-[1.1rem] font-bold text-white'>
+                                    Designation:
+                                </span>
+                                <input
+                                    type="text"
+                                    name='designation'
+                                    required
+                                    value={form.designation}
+                                    onChange={handleChange}
+                                    className='bg-transparent p-2 border-[1px] text-[#eaeaea] rounded-xl mt-2'
+                                    
+                                />
+                            </label>
+                            <label className='flex flex-col mb-3 w-[40%]'>
+                                <span className='text-[1.1rem] font-bold text-white'>
+                                    Mobile Number:
+                                </span>
+                                <input
+                                    type="tel"
+                                    name='mobNo'
+                                    required
+                                    value={form.mobNo}
+                                    onChange={handleChange}
+                                    className='bg-transparent p-2 border-[1px] text-[#eaeaea] rounded-xl mt-2'
+                                    
+                                />
+                            </label>
+                        </div>
+                        <label className='flex flex-col mb-3'>
                             <span className='text-[1.1rem] font-bold text-white'>
-                                Your Name:
+                                Email:
                             </span>
                             <input
-                                type="text"
-                                name='name'
+                                type="email"
+                                name='email'
                                 required
-                                value={form.name}
+                                value={form.email}
                                 onChange={handleChange}
-                                className='bg-transparent text-[#eaeaea] rounded-xl mt-2'
-                                placeholder='Enter your full name'
+                                className='bg-transparent p-2 border-[1px] rounded-xl mr-[10%] text-[#eaeaea]'
+                                
                             />
                         </label>
                         <label className='flex flex-col mb-3'>
                             <span className='text-[1.1rem] font-bold text-white'>
-                                Company's Name:
+                                Your Query If Any:
                             </span>
-                            <input
-                                type="text"
-                                name='company'
-                                required
-                                value={form.company}
+                            <textarea
+                                name='query'
+                                value={form.query}
                                 onChange={handleChange}
-                                className='bg-transparent text-[#eaeaea] rounded-xl mt-2'
-                                placeholder='Enter your company name'
+                                className='bg-transparent text-[#eaeaea] border-[1px] border-white rounded-2xl p-2 mt-1'
+                                placeholder='Enter your query'
                             />
                         </label>
-                    </div>
-                    <div className='flex flex-row'>
-                        <label className='flex flex-col mb-3 w-[50%]'>
-                            <span className='text-[1.1rem] font-bold text-white'>
-                                Designation:
-                            </span>
-                            <input
-                                type="text"
-                                name='designation'
-                                required
-                                value={form.designation}
-                                onChange={handleChange}
-                                className='bg-transparent text-[#eaeaea] rounded-xl mt-2'
-                                placeholder='Enter your designation'
-                            />
-                        </label>
-                        <label className='flex flex-col mb-3'>
-                            <span className='text-[1.1rem] font-bold text-white'>
-                                Mobile Number:
-                            </span>
-                            <input
-                                type="tel"
-                                name='mobNo'
-                                required
-                                value={form.mobNo}
-                                onChange={handleChange}
-                                className='bg-transparent text-[#eaeaea] rounded-xl mt-2'
-                                placeholder='Enter your mobile number'
-                            />
-                        </label>
-                    </div>
-                    <label className='flex flex-col mb-3'>
-                        <span className='text-[1.1rem] font-bold text-white'>
-                            Email:
-                        </span>
-                        <input
-                            type="email"
-                            name='email'
-                            required
-                            value={form.email}
-                            onChange={handleChange}
-                            className='bg-transparent text-[#eaeaea]'
-                            placeholder='Enter your email'
-                        />
-                    </label>
-                    <label className='flex flex-col mb-3'>
-                        <span className='text-[1.1rem] font-bold text-white'>
-                            Your Query If Any:
-                        </span>
-                        <textarea
-                            name='query'
-                            value={form.query}
-                            onChange={handleChange}
-                            className='bg-transparent text-[#eaeaea] border-[1px] border-white rounded-2xl p-2 mt-1'
-                            placeholder='Enter your query'
-                        />
-                    </label>
-                    <button type="submit" className="bg-white font-semibold hover:bg-[#F13F25] duration-300 text-black py-2 px-4 rounded-full mt-4">
-                        {loading ? 'Sending...' : 'GET STARTED'}
-                    </button>
-                </form>
+                        <button type="submit" className="bg-white font-semibold hover:bg-[#F13F25] duration-300 text-black py-2 px-4 rounded-full mt-4">
+                            {loading ? 'Sending...' : 'GET STARTED'}
+                        </button>
+                    </form>
+                </div>
+                {/* <img src={formImg} alt="form Image" className='w-[30%]' /> */}
+                
             </div>
         </div>
     );

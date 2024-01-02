@@ -83,8 +83,8 @@ const CareerForm = () => {
               animate="show"
               variants={slideIn('left', "tween", 0.2, 1)}
               className='w-[30%] flex flex-col mx-auto justify-center items-center'>
-              <h1 className='text-9xl'>BOOST</h1>
-              <h1 className='text-5xl text-justify'>YOUR CAREER</h1>
+              <h1 className='text-5xl font-bold text-center'>CAREER CHANGE <span className='text-[#F13F25]'>?</span></h1>
+              <h1 className='text-5xl text-center'>WE GOT YOU.</h1>
             </motion.div>
 
 

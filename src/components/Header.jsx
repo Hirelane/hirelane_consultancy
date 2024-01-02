@@ -16,7 +16,7 @@ const Header = () => (
                 Where talent meets
             </h2>
             <h1 className=' text-[6rem] font-bold text-[#F13F25]'>TRIUMPH.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores nam voluptate rem ratione minus omnis, ipsa porro eius architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, est.</p>
+            <p>Empowering growth through precision talent solutions and strategic partnerships.</p>
             <Button variant='contained' endIcon={<SendIcon />} className='w-[35%]' 
             sx={{
                 my: 5,
