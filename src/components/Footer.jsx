@@ -1,11 +1,11 @@
-import hirelaneLogo from '../assets/hlc_logo_long.png';
+import hirelaneLogo from '../assets/hlc_logo_sq.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
     <div className="flex bg-[#000000] flex-row items-center justify-between py-10">
         <div className=' ml-20'>
-            <img src={hirelaneLogo} alt="hirelane logo" className='w-[330px] object-contain'/>
+            <img src={hirelaneLogo} alt="hirelane logo" className='w-[200px] object-contain'/>
         </div>
         <div className="flex flex-row gap-8 mr-10 flex-wrap">
             <div className='flex flex-col justify-center items-center'>

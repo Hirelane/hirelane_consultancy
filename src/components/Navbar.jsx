@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from '@mui/material';
-import hlc_logo_sq from '../assets/hlc_logo_long.png'
+import hlc_logo_sq from '../assets/hlc_logo_sq.png'
 import { useState } from "react";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
             <img
                 src={hlc_logo_sq}
                 alt="HLC Logo"
-                className=" w-60 object-contain"
+                className=" w-[8rem] object-contain"
             />
 
             <div className="list-none mr-4 hidden sm:flex flex-row gap-10">

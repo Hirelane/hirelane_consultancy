@@ -1,21 +1,38 @@
 import cardBG from '../assets/exertiseBG.jpg'
-import pageBG from '../assets/pageBG.jpg'
+import blackBG from '../assets/exertiseBG.jpg'
+import { motion } from 'framer-motion'
+import { textVariant } from '../utils/Motion'
+import { useInView } from 'react-intersection-observer';
+
+const AnimatedSection = ({ children }) => {
+    const [ref, inView] = useInView({
+      triggerOnce: true,
+      rootMargin: '-50px 0px', // Adjust the root margin as needed
+    });
+  
+    return <motion.div ref={ref} variants={textVariant(0.4)} className='py-[10%]' animate={inView ? 'visible' : 'hidden'}>{children}</motion.div>;
+};
 
 const MissionVision = () => {
     return (
-        <div className="flex flex-row justify-center my-32 items-center gap-[150px]" style={{
-            background: `url(${pageBG})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-        }}>
-            <div className="flex flex-col justify-between items-center h-[500px] w-[600px] bg-black rounded-3xl border-[#F13F25] border-2 shadow-xl">
-                <p className="text-[2rem] font-semibold text-white border-b-2 border-[#F13F25] rounded-[2rem] p-2 text-center w-[80%] mt-10 transition duration-300 ease-in-out hover:bg-[#F13F25] hover:text-black">Our Mission</p>
-                <p className="font-medium mb-10 px-10 pb-16 text-[#FFFFFF]">To be the trusted strategic partner for businesses, providing precision talent solutions that go beyond recruitment, aligning with culture, and driving long-term success.</p>
-            </div>
-            <div className="flex flex-col justify-between items-center h-[500px] w-[600px] bg-black rounded-3xl border-[#F13F25] border-2 shadow-xl" >
-                <p className="text-[2rem] font-semibold text-white border-b-2 border-[#F13F25] rounded-[2rem] p-2 text-center w-[80%] mt-10 transition duration-300 ease-in-out hover:bg-[#F13F25] hover:text-black">Our Vision</p>
-                <p className="font-medium mb-10 px-10 pb-16 text-[#FFFFFF]">To redefine the future of workforce dynamics by seamlessly connecting businesses with the right talent, fostering growth, and creating sustainable success.</p>
+        <div className='flex justify-center'>
+            <div className='flex flex-col w-[50%]'>
+                <AnimatedSection>
+                  <p className='font-light text-[1.4rem] text-white'>What we are, what we do</p>
+                  <h1 className='font-bebas-neue text-[6rem] text-[#F13F25]'>OUR MISSION</h1>
+                  <p className='font-light text-[2rem] text-white'>
+                    To be the trusted strategic partner for businesses, providing precision talent solutions that go beyond recruitment, aligning with culture, and driving long-term success.
+                  </p>
+                </AnimatedSection>
+                <div className='pb-[10%]'>
+                  <AnimatedSection>
+                    <p className='font-light text-[1.4rem] text-white'>What we aspire to be</p>
+                    <h1 className='font-bebas-neue text-[6rem] text-[#F13F25]'>OUR VISION</h1>
+                    <p className='font-light text-[2rem] text-white'>
+                      To redefine the future of workforce dynamics by seamlessly connecting businesses with the right talent, fostering growth, and creating sustainable success.
+                    </p>
+                  </AnimatedSection>
+                </div>
             </div>
         </div>
     )
