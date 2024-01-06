@@ -198,26 +198,17 @@ const professions = [
 
 const packages = [
     {
-      title: 'Hire a talent for short-term',
+      title: 'Basic Premium Package',
       desc: 'Ideal when you want to hire contractors for a fixed-term',
-      salary: '$499',
-      platformFee: '25%',
-      features: ['Resume Screening', 'Payout Management', 'Email Support', '14 Days Easy Cancellation'],
+      platformFee: '10-Day Salary',
+      features: ['Resume Screening', 'Initial Interview Coordination', 'Job Offer Facilitation', '30 Days Offer Replacement'],
     },
     {
-      title: 'Hire a talent for long-term',
+      title: 'Premium Package',
       desc: 'Best when you want to hire on ongoing basis',
-      salary: '$799',
-      platformFee: '35%',
-      features: ['Resume Screening', 'Payout Management', 'Phone Support', 'Candidate Matching', '30 Days Easy Cancellation'],
-    },
-    {
-      title: 'Direct-hire on your payroll',
-      desc: 'Perfect when you want to hire and manage payroll on your own',
-      salary: '$1299',
-      platformFee: '10%',
-      features: ['Resume Screening', 'Account management and support', 'Phone and Email Support', '90 Days Replacement'],
-    },
+      platformFee: '6% of Annual CTC',
+      features: ['Full-Service Recruitment', 'Skill Assessment', 'Extended Interviews', 'Onboarding Support', 'Reference Checks', 'Dedicated Account Manager', 'Offer Replacement Within First 4 Months'],
+    }
   ];
 
 export { talents, expertises, reasons, processes, helps, howItWorks, professions, packages };
