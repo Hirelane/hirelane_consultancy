@@ -2,7 +2,8 @@ import AboutUsHeader from '../components/AboutUsHeader';
 import AboutUsStats from '../components/AboutUsStats';
 import MissionVision from '../components/MissionVision';
 import OurLeaders from '../components/OurLeaders';
-import blackBG from '../assets/exertiseBG.jpg'
+import blackBG from '../assets/exertiseBG.jpg';
+import AboutUsCTA from '../components/AboutUsCTA';
 
 const Aboutus = () => {
     return (
@@ -16,6 +17,7 @@ const Aboutus = () => {
             }}>
                 <AboutUsStats/>
                 <MissionVision/>
+                <AboutUsCTA />
             </div>
             
             <OurLeaders/>
