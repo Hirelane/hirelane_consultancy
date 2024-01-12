@@ -14,8 +14,8 @@ const Header = () => (
     }}>
         
         <div className='w-[40%] ml-10 flex flex-col mt-[100px]'>
-            <h2 className='text-[2.5rem] font-light'>
-                Where talent meets
+            <h2 className='text-[2.5rem] font-light    '>
+                Where talent meets    
             </h2>
             <h1 className=' text-[6rem] font-bold text-[#F13F25]'>TRIUMPH.</h1>
             <div className='w-[80%] flex flex-col gap-2'>
