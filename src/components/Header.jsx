@@ -12,6 +12,7 @@ const Header = () => (
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }}>
+        
         <div className='w-[40%] ml-10 flex flex-col mt-[100px]'>
             <h2 className='text-[2.5rem] font-light'>
                 Where talent meets
