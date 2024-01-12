@@ -21,7 +21,7 @@ const OurLeaders = () => {
                 </div>
                 <p className='font-semibold text-[1.5rem] mt-4'>Badal Talwar</p>
                 <p className=' font-light text-[1.2rem]'>Director</p>
-                <p className=' font-light text-[1rem] my-5'>+91 9654609038</p>
+                <p className=' font-light text-[1rem] my-5'>badaltalwar@hirelaneconsultancy.com</p>
                 {/* <a href="https://www.linkedin.com/in/kriti-kumar-998a931b1/" target="_blank" rel="noopener noreferrer">
                   <LinkedInIcon sx={{ color: '#F13F25', fontSize: 40 }} className='my-5' />
                 </a> */}
@@ -40,7 +40,7 @@ const OurLeaders = () => {
             </div>
                 <p className='font-semibold text-[1.5rem] mt-4'>Sheekha Koul</p>
                 <p className='font-light text-[1.2rem]'>Director</p>
-                <p className='font-light text-[1rem] my-5'>+91 7838772425</p>
+                <p className='font-light text-[1rem] my-5'>sheekhakoul@hirelaneconsultancy.com</p>
                 {/* <a href="https://www.linkedin.com/in/kriti-kumar-998a931b1/" target="_blank" rel="noopener noreferrer">
                   <LinkedInIcon sx={{ color: '#F13F25', fontSize: 40 }} className='my-5' />
                 </a> */}
