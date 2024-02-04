@@ -48,7 +48,7 @@ const Expertise = () => (
         backgroundPosition: 'center',
     }}>
         <div className="flex justify-center items-center">
-            <h1 className=' text-[4rem] font-bold text-[#FFFFFF]'>Our <span className='text-[#F13F25]'><AnimatedUnderline text={'Expertise.'}/></span></h1>
+            <h1 className='text-[2rem] md:text-[4rem] font-bold text-[#FFFFFF]'>Our <span className='text-[#F13F25]'><AnimatedUnderline text={'Expertise.'}/></span></h1>
         </div>
         <div className="mt-20 flex flex-col pb-24">
             <VerticalTimeline lineColor="#f07663">

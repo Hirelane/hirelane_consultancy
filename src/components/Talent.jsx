@@ -16,18 +16,18 @@ const TalentCard = ({title, desc, icon}) => (
 );
 
 const Talent = () => (
-    <div className="flex flex-row justify-between flex-wrap bg-[#595856] p-9" style={{
+    <div className="flex sm:flex-row sm:justify-between sm:flex-wrap flex-col bg-[#595856] p-9" style={{
         backgroundImage: `url(${talentBG})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }}>
-        <div className="flex flex-col w-[30vw] items-start justify-center mt-10 mb-10">
+        <div className="flex flex-col sm:w-[30vw] items-start justify-center mt-10 mb-10">
             <h3 className="text-[1.5rem] text-[#D4D3D2] font-light">TOP-TIER TALENT</h3>
             <h1 className="text-[2.4rem] text-[#FBFAF8] font-semibold">Elevate your team with our expertise.</h1>
             <h1 className="text-[1rem] text-[#D4D3D2] font-normal mt-2">We'll help you build the team you need to succeed in today's competitive marketplace.</h1>
         </div>
-        <div className="flex flex-row w-[50vw] flex-wrap">
+        <div className="flex flex-row sm:w-[50vw] flex-wrap">
             {
                 talents.map((talent) => (
                     <TalentCard title={talent.title} desc={talent.desc} icon={talent.icon} />

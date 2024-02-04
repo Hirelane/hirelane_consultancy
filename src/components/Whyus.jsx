@@ -18,8 +18,8 @@ const Whyus = () => (
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }}>
-        <h1 className="text-[2.4rem] font-semibold flex justify-center gap-2 text-[#FFFFFF]">Why businesses <span className='text-[#F13F25]'>choose</span> us</h1>
-        <p className="text-[1.5rem] text-[#e1e1e1] flex justify-center mb-10 font-light">Because of our unique brand promises to guarantee you a fruitful partnership</p>
+        <h1 className="text-[1.8rem] md:text-[2.4rem] font-semibold flex justify-center gap-2 text-[#FFFFFF]">Why businesses <span className='text-[#F13F25]'>choose</span> us</h1>
+        <p className="text-[1rem] md:text-[1.5rem] mx-2 text-center text-[#e1e1e1] flex justify-center mb-10 font-light">Because of our unique brand promises to guarantee you a fruitful partnership</p>
         <div className="flex flex-row gap-5 flex-wrap justify-center mx-auto w-[70%] pb-10">
             {
                 reasons.map((reason) => (
