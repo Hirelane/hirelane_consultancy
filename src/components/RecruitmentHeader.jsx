@@ -8,8 +8,8 @@ const RecruitmentHeader = () => {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
         }}>
-            <p className='text-white font-bold text-[3rem]'>Choose from <span className='text-[#F13F25]'>Hirelane's</span> vast network of top professionals.</p>
-            <p className='text-[#EAEAEA] font-light text-[2rem]'>Recruited at par with the international standards of the top companies pan India.</p>
+            <p className='text-white font-bold text-[2rem] text-center md:text-[3rem]'>Choose from <span className='text-[#F13F25]'>Hirelane's</span> vast network of top professionals.</p>
+            <p className='text-[#EAEAEA] font-light text-center mx-2 md:mx-0 md:text-[2rem]'>Recruited at par with the international standards of the top companies pan India.</p>
         </div>
     )
 }

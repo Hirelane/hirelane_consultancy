@@ -4,12 +4,12 @@ const VideoBackground = () => {
   return (
     <div className="relative w-full">
       <div className='flex flex-col justify-center items-center py-20 relative z-20'>
-        <p className='text-white w-[60vw] text-center font-bold text-[3rem]'>How does our Recruitment process help in hiring?</p>
+        <p className='text-white w-[60vw] text-center font-bold text-[1.5rem] md:text-[3rem]'>How does our Recruitment process help in hiring?</p>
       </div>
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0  overflow-hidden">
         <video
-          className="w-full h-[40vh] object-cover"
+          className="w-full h-full object-cover"
           autoPlay
           loop
           muted
