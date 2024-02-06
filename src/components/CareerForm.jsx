@@ -92,7 +92,7 @@ const CareerForm = () => {
               initial="hidden"
               animate="show"
               variants={slideIn('right', "tween", 0.2, 1)}
-              className=' lg:w-[50%] mx-auto mt-28'>
+              className=' lg:w-[50%] w-[90%] mx-auto mt-28'>
                 
               <form
                 id='feedbackForm'
@@ -104,9 +104,9 @@ const CareerForm = () => {
                     backgroundPosition: 'center',
                 }}>
                   
-                <div className='flex flex-row justify-start flex-wrap'>
+                <div className='flex md:flex-row md:justify-start flex-wrap flex-col'>
                   <label
-                    className='w-[45%] ml-[5%] flex flex-col mt-5 mb-2'>
+                    className='md:w-[45%] w-[100%] ml-[5%] flex flex-col mt-5 mb-2'>
                     <span className='font-bold text-white'>First Name: </span>
                     <input
                       name='fname'
@@ -114,23 +114,23 @@ const CareerForm = () => {
                       required
                       onChange={handleChange}
                       placeholder='Enter your first name'
-                      className='rounded-xl border-b-2 border-[#757575] text-[#b0b0b0] w-[50%] mt-1 bg-[#222222] p-2'
+                      className='rounded-xl border-b-2 border-[#757575] text-[#b0b0b0] md:w-[50%] w-[80%] mt-1 bg-[#222222] p-2'
                     />
                   </label>
                   <label
-                    className='flex flex-col mt-5 mb-2'>
+                    className='flex flex-col mt-5 mb-2 ml-[5%] md:ml-0 w-[80%] md:w-[45%]'>
                     <span className='font-bold text-white'>Last Name: </span>
                     <input
                       name='surname'
                       value={form.surname}
                       onChange={handleChange}
                       placeholder='Enter your last name'
-                      className='rounded-xl border-b-2 border-[#757575] text-[#b0b0b0] mt-1 bg-[#222222] p-2'
+                      className='rounded-xl border-b-2 md:w-[50%] border-[#757575] text-[#b0b0b0] mt-1 bg-[#222222] p-2'
                     />
                   </label>
                 </div>
 
-                <div className='flex justify-start flex-wrap flex-row'>
+                <div className='flex justify-between md:justify-start flex-wrap flex-row'>
                   <label
                     className='flex flex-col lg:flex-row w-[45%] lg:items-center ml-[5%] mt-5 mb-2'>
                     <span className='font-bold text-white'>Age: </span>
@@ -145,7 +145,7 @@ const CareerForm = () => {
                     />
                   </label>
                   <label
-                    className='flex flex-col lg:flex-row lg:items-center mt-5 mb-2'>
+                    className='flex flex-col lg:flex-row lg:items-center mt-5 mb-2 mr-[10%]'>
                     <span className='font-bold text-white'>Gender: </span>
                     <select name='gender' form='feedbackForm' onChange={handleChange} value={form.gender} className='bg-[#222222] p-2 border-b-2 border-[#909090] rounded-xl text-[#b0b0b0] sm:mt-1 xl:mt-0 xl:ml-2'>
                       <option value="male">Male</option>
@@ -170,7 +170,7 @@ const CareerForm = () => {
                 </div>
                 <div className='flex justify-start flex-wrap flex-row'>
                   <label
-                    className='flex flex-col lg:flex-row lg:items-center mt-5 mb-2 ml-[5%]'>
+                    className='flex flex-col lg:flex-row lg:items-center mt-5 mb-2 ml-[5%] w-full'>
                     <span className='font-bold text-white'>Email: </span>
                     <input
                       type='email'
@@ -179,14 +179,14 @@ const CareerForm = () => {
                       required
                       onChange={handleChange}
                       placeholder='Enter your Email'
-                      className='w-[550px] bg-[#222222] text-[#b0b0b0] border-b-2 border-[#757575] rounded-xl sm:mt-1 xl:mt-0 xl:ml-2 p-2'
+                      className='w-[80%] bg-[#222222] text-[#b0b0b0] border-b-2 border-[#757575] rounded-xl sm:mt-1 xl:mt-0 xl:ml-2 p-2'
                     />
                   </label>
                 </div>
 
-                <div className='flex flex-row justify-start flex-wrap'>
+                <div className='flex flex-row justify-start flex-wrap w-full'>
                   <label
-                    className='w-[45%] ml-[5%] flex flex-col mt-5 mb-2'>
+                    className='w-full md:w-[45%] ml-[5%] flex flex-col mt-5 mb-2'>
                     <span className='font-bold text-white'>Work Experience: </span>
                     <input
                       name='workex'
@@ -195,11 +195,11 @@ const CareerForm = () => {
                       type='number'
                       onChange={handleChange}
                       placeholder='Work experience in years'
-                      className='rounded-xl w-[60%] mt-1 bg-[#222222] border-[#757575] text-[#b0b0b0] p-2 border-b-2'
+                      className='rounded-xl w-[90%] mt-1 bg-[#222222] border-[#757575] text-[#b0b0b0] p-2 border-b-2'
                     />
                   </label>
                   <label
-                    className='flex flex-col mt-5 mb-2'>
+                    className='flex flex-col mt-5 mb-2 md:ml-0 ml-[5%]'>
                     <span className='font-bold text-white'>Upload Your CV: </span>
                     <input
                         type='file'
