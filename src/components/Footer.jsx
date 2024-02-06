@@ -3,11 +3,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
-    <div className="flex bg-[#000000] flex-row items-center justify-between py-10">
-        <div className=' ml-20'>
+    <div className="flex bg-[#000000] flex-row items-center justify-between py-10 gap-10">
+        <div className=' md:ml-20 ml-10'>
             <img src={hirelaneLogo} alt="hirelane logo" className='w-[200px] object-contain'/>
         </div>
-        <div className="flex flex-row gap-8 mr-10 flex-wrap">
+        <div className="flex flex-row gap-8 md:mr-10 mr-2 flex-wrap">
             <div className='flex flex-col justify-center items-center'>
                 <p className='text-white font-semibold text-[1.2rem]'>Follow Us</p>
                 <a href="https://www.linkedin.com/in/kriti-kumar-998a931b1/" target="_blank" rel="noopener noreferrer">
