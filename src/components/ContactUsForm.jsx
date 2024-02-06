@@ -66,10 +66,10 @@ const ContactUsForm = () => {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
         }}>
-            <h1 className='font-bold text-[3rem]'>Unlock tomorrow, today.</h1>
-            <p className='font-light text-[1.2rem]'>Fill out this form, and our team will contact you shortly.</p>
+            <h1 className='font-bold md:text-[3rem] text-[1.7rem]'>Unlock tomorrow, today.</h1>
+            <p className='font-light md:text-[1.2rem]'>Fill out this form, and our team will contact you shortly.</p>
             <div className='w-full flex-row flex justify-center gap-[10%]'>
-                <div className='w-[40%] mt-10'>
+                <div className='md:w-[40%] w-[95%] mt-10'>
                     <form onSubmit={handleSubmit}
                     className='flex p-4 rounded-xl shadow-lg shadow-[#696969] flex-col' style={{
                         background: `url(${blackBG})`,

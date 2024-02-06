@@ -9,7 +9,7 @@ const ContactUsHeader = () => {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
         }}>
-            <p className='text-white w-[50%] text-center font-bold text-[3rem]'>We solve your <span className='text-[#F13F25]'><AnimatedUnderline text='hiring challenges.'/></span></p>
+            <p className='text-white w-[50%] text-center font-bold text-[1.5rem] md:text-[3rem]'>We solve your <span className='text-[#F13F25]'><AnimatedUnderline text='hiring challenges.'/></span></p>
         </div>
     )
 }
