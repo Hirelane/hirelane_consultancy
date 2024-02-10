@@ -77,8 +77,8 @@ const ContactUsForm = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
                     }}>
-                        <div className='flex flex-row gap-[10%]'>
-                            <label className='flex flex-col mb-3 w-[40%]'>
+                        <div className='flex flex-col md:flex-row gap-[10%]'>
+                            <label className='flex flex-col mb-3 w-[80%] md:w-[40%]'>
                                 <span className='text-[1.1rem] font-bold text-white'>
                                     Your Name:
                                 </span>
@@ -92,7 +92,7 @@ const ContactUsForm = () => {
                                     
                                 />
                             </label>
-                            <label className='flex flex-col mb-3 w-[40%]'>
+                            <label className='flex flex-col mb-3 w-[80%] md:w-[40%]'>
                                 <span className='text-[1.1rem] font-bold text-white'>
                                     Company's Name:
                                 </span>
@@ -107,8 +107,8 @@ const ContactUsForm = () => {
                                 />
                             </label>
                         </div>
-                        <div className='flex flex-row gap-[10%]'>
-                            <label className='flex flex-col mb-3 w-[40%]'>
+                        <div className='flex flex-col md:flex-row gap-[10%]'>
+                            <label className='flex flex-col mb-3 w-[80%] md:w-[40%]'>
                                 <span className='text-[1.1rem] font-bold text-white'>
                                     Designation:
                                 </span>
@@ -122,7 +122,7 @@ const ContactUsForm = () => {
                                     
                                 />
                             </label>
-                            <label className='flex flex-col mb-3 w-[40%]'>
+                            <label className='flex flex-col mb-3 w-[80%] md:w-[40%]'>
                                 <span className='text-[1.1rem] font-bold text-white'>
                                     Mobile Number:
                                 </span>
