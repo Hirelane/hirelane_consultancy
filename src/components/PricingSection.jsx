@@ -4,7 +4,7 @@ import pageBG from '../assets/pageBG.jpg'
 
 const PackagesCard = ({ card, key }) => {
     return (
-      <div className="rounded-xl justify-between hover:scale-110 duration-300 w-[30%] md:w-[45%] lg:w-[40%] max-h-[80vh] flex flex-col border-[1px] bg-white shadow-xl shadow-[#4a4a4a] border-[#aaaaaa] my-4 mx-2 overflow-hidden">
+      <div className="rounded-xl justify-between hover:scale-110 duration-300 w-[80%] md:w-[45%] lg:w-[40%] h-[60vh] flex flex-col border-[1px] bg-white shadow-xl shadow-[#4a4a4a] border-[#aaaaaa] my-4 mx-2 overflow-hidden">
         <div className="flex flex-col px-4 mt-4">
           <p className="font-bold text-[2rem]">{card.title}</p>
           <p className="my-2 font-light text-[0.9rem] text-[#767676]">{card.desc}</p>
@@ -34,8 +34,8 @@ const PricingSection = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }}>
-        <p className='font-light text-[2rem] mb-8'>Choose how you want to hire full-time talents</p>
-      <div className="w-full md:w-[80%] lg:w-[70%] flex flex-wrap justify-center gap-[5%]">
+        <p className='font-light md:text-[2rem] text-[1.5rem] text-center w-[90%] mb-8'>Choose how you want to hire full-time talents</p>
+      <div className="w-full md:w-[80%] lg:w-[70%] flex flex-col md:flex-row flex-wrap justify-center items-center gap-[5%]">
         {packages.map((card, index) => (
           <PackagesCard key={index} card={card} />
         ))}

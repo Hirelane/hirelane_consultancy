@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-import { slideIn } from '../utils/Motion.js';
 import { useState } from 'react';
 import { professions } from '../data.js';
 import blackBG from '../assets/exertiseBG.jpg'
@@ -69,7 +67,6 @@ const CareerForm = () => {
         setForm({ ...form, [name]: value })
     }
 
-
     return (
         <>
           <div className='flex h-[100%] lg:flex-row flex-col flex-wrap lg:mt-0 sm:mt-[90px] pb-40' style={{
@@ -78,22 +75,12 @@ const CareerForm = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                 }}>
-            <motion.div
-              initial="hidden"
-              animate="show"
-              variants={slideIn('left', "tween", 0.2, 1)}
-              className='w-[30%] flex flex-col mx-auto justify-center items-center'>
-              <h1 className='text-5xl font-bold text-center'>CAREER CHANGE <span className='text-[#F13F25]'>?</span></h1>
-              <h1 className='text-5xl text-center'>WE GOT YOU.</h1>
-            </motion.div>
+            <div className='md:w-[30%] w-[60%] flex flex-col mx-auto mt-10 md:mt-0 justify-center items-center'>
+              <h1 className='md:text-5xl text-2xl font-bold text-center'>CAREER CHANGE <span className='text-[#F13F25]'>?</span></h1>
+              <h1 className='md:text-5xl text-2xl text-center'>WE GOT YOU.</h1>
+            </div>
 
-
-            <motion.div
-              initial="hidden"
-              animate="show"
-              variants={slideIn('right', "tween", 0.2, 1)}
-              className=' lg:w-[50%] w-[90%] mx-auto mt-28'>
-                
+            <div className='lg:w-[50%] w-[90%] mx-auto md:mt-28'>
               <form
                 id='feedbackForm'
                 onSubmit={handleSubmit}
@@ -214,12 +201,12 @@ const CareerForm = () => {
 
                 <button
                   type="submit"
-                  className=" bg-[#222222] border-b-2 border-[#757575] hover:bg-gray-400 ml-[5%] py-3 px-8 mb-3 hover:text-[#222222] duration-300 outline-none w-fit text-[#b0b0b0] font-bold shadow-md shadow-primary rounded-xl"
+                  className="bg-[#222222] border-b-2 border-[#757575] hover:bg-gray-400 ml-[5%] py-3 px-8 mb-3 hover:text-[#222222] duration-300 outline-none w-fit text-[#b0b0b0] font-bold shadow-md shadow-primary rounded-xl"
                 >
                   Submit
                 </button>
               </form>
-            </motion.div>
+            </div>
           </div>
         </>
     )
