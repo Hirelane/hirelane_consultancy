@@ -7,7 +7,7 @@ const PackagesCard = ({ card, key }) => {
       <div className="rounded-xl justify-between hover:scale-110 duration-300 w-[80%] md:w-[45%] lg:w-[40%] h-[60vh] flex flex-col border-[1px] bg-white shadow-xl shadow-[#4a4a4a] border-[#aaaaaa] my-4 mx-2 overflow-hidden">
         <div className="flex flex-col px-4 mt-4">
           <p className="font-bold text-[2rem]">{card.title}</p>
-          <p className="my-2 font-light text-[0.9rem] text-[#767676]">{card.desc}</p>
+          <p className="my-2 font-light text-[1.2rem] text-[#767676]">{card.desc}</p>
         </div>
         <div className="bg-[#ff9a8a] overflow-auto pl-8 pr-4">
           <ul className="list-disc py-4">
